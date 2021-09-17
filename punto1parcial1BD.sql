@@ -98,7 +98,7 @@ BEGIN
 	return get_city_name(citi_id);
 END;$$
 
-select get_cityp_name(2);
+
 ---------------------------------------------------------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION get_city_name(citi_id int)
   RETURNS character varying 
@@ -118,7 +118,7 @@ BEGIN
 	return citi_name;
 END;$$
 
-select get_city_name(1);
+
 ------------------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION get_country_name(countri_id int)
   RETURNS character varying 
@@ -155,9 +155,9 @@ BEGIN
 	end if;
 	return citi_id;
 END;$$
-select get_country2_name(3);
 
-drop function get_countryp_name(integer);
+
+
 --------------------------------------------------------
 CREATE OR REPLACE FUNCTION get_boff_name(bo_id int)
   RETURNS character varying 
@@ -177,7 +177,7 @@ BEGIN
 	return boff_name;
 END;$$
 
-select get_country_name(3);
+
 
 ---------------------------------------------------
 
@@ -199,7 +199,7 @@ BEGIN
 	return dept_name;
 END;$$
 
-select get_dept_name(3);
+
 
 ------------------------------------------------------
 CREATE OR REPLACE FUNCTION get_add_name(add_id int)
@@ -220,7 +220,7 @@ BEGIN
 	return add_name;
 END;$$
 
-select get_add_name(3);
+
 -----------------------------------------------------------
 CREATE OR REPLACE FUNCTION get_pos_name(pos_id int)
   RETURNS character varying 
@@ -240,7 +240,7 @@ BEGIN
 	return pos_name;
 END;$$
 
-select get_pos_name(1);
+
 -----------------------------------------------------------------------
 CREATE OR REPLACE FUNCTION get_super_name(sup_id int)
   RETURNS character varying 
